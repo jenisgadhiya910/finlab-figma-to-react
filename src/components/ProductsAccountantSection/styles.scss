@@ -1,0 +1,99 @@
+@import "../../styles/main.scss";
+.products-accountant-section {
+  padding: 60px 60px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .our-best-feature-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 25px;
+    gap: 10px;
+    background: #f4f4f7;
+    border-radius: 80px;
+    margin-bottom: 18px;
+    width: fit-content;
+    span {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: $secondary500;
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
+  }
+  .title {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: $secondary500;
+    margin-bottom: 24px;
+    word-break: break-word;
+    @media screen and (max-width: 767px) {
+      font-size: 32px;
+    }
+  }
+
+  .accounts-list {
+    margin-top: 32px;
+    .account-card-item {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      border-radius: 30px;
+      border: 2px solid #dce4e8;
+      padding: 32px;
+      &:hover {
+        box-shadow: 0px 44px 184px -10px rgba(0, 0, 0, 0.11);
+      }
+      img {
+        height: 180px;
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: 54px;
+      }
+      .title {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: $secondary500;
+        margin-bottom: 24px;
+      }
+      .desc {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: $secondary400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 30px 40px 120px;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 0px 20px 80px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 0px 16px 80px;
+  }
+}

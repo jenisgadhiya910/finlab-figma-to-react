@@ -1,0 +1,51 @@
+@import "../../styles/main.scss";
+.login-page-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 480px;
+  &-title {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: $darkBlack;
+    white-space: pre-line;
+    margin-bottom: 32px;
+  }
+  .ant-form-item {
+    margin-bottom: 24px;
+    .ant-form-item-label {
+      padding-bottom: 2px;
+      label {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 160%;
+        letter-spacing: -0.02em;
+        color: $secondary300;
+      }
+    }
+  }
+  .ant-checkbox-wrapper-in-form-item {
+    float: left;
+  }
+  .forgot-link {
+    float: right;
+  }
+  .login-form-button {
+    width: 100%;
+  }
+  .register-line {
+    text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    &-title {
+      font-size: 24px;
+    }
+  }
+}

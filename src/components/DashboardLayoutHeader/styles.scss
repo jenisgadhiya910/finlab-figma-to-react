@@ -1,0 +1,104 @@
+@import "../../styles/main.scss";
+.dashboard-layout-header {
+  padding: 30px 60px;
+  background: $darkBlack;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  // box-shadow: 0px 18px 84px -20px rgba(0, 0, 0, 0.04);
+  .header-left {
+    display: flex;
+    align-items: center;
+    column-gap: 72px;
+    .logo-image {
+      width: 100px;
+      height: 32px;
+    }
+    .menu-wrap {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+      .menu-item {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+  .header-right {
+    .ant-btn-text {
+      color: $white;
+      font-weight: bold;
+    }
+    .menu-icon {
+      color: $white;
+      font-size: 24px;
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 24px 30px;
+    .header-left {
+      column-gap: 30px;
+      .menu-wrap {
+        column-gap: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 24px;
+    .header-left {
+      .menu-wrap {
+        display: none;
+      }
+    }
+    .header-right {
+      &-btns {
+        display: none;
+      }
+      .menu-icon {
+        display: unset;
+      }
+    }
+  }
+}
+
+.mobile-menu-drawer {
+  background-color: $darkBlack !important;
+  .ant-drawer-close {
+    color: $white;
+  }
+  .mobile-menu-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    color: $white;
+    margin-bottom: 50px;
+    .menu-item {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  .header-right-btns {
+    width: 100%;
+    .ant-btn-text {
+      color: $white;
+    }
+  }
+}

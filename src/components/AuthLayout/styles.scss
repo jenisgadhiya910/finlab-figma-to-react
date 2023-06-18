@@ -1,0 +1,138 @@
+@import "../../styles/main.scss";
+.auth-layout {
+  height: 100vh;
+  .auth-layout-row {
+    height: 100%;
+    .banner-wrap {
+      background: $darkBlack;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 60px;
+      .logo {
+        height: 40px;
+        width: 130px;
+        margin-bottom: 40px;
+      }
+      .title {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        background: linear-gradient(113.2deg, #3bdbbe 9.45%, #76d1f7 69.2%),
+          #ffffff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .desc {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: $white;
+        margin-bottom: 24px;
+      }
+      .summary {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: $secondary200;
+      }
+    }
+    .auth-form-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .footer-wrap {
+        position: absolute;
+        bottom: 26px;
+        text-align: center;
+        padding: 0 12px;
+        display: flex;
+        row-gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .copyright-text {
+          font-family: "Plus Jakarta Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: $secondary400;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    .auth-layout-row {
+      .banner-wrap {
+        .title {
+          font-size: 46px;
+        }
+        .desc {
+          font-size: 46px;
+          line-height: 140%;
+        }
+        .summary {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .auth-layout-row {
+      .banner-wrap {
+        padding: 0 40px;
+        .title {
+          font-size: 34px;
+        }
+        .desc {
+          font-size: 34px;
+          line-height: 130%;
+        }
+        .summary {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    height: auto;
+    .auth-layout-row {
+      .banner-wrap {
+        padding: 50px 28px;
+        .logo {
+          height: 38px;
+          width: 120px;
+        }
+        .title {
+          font-size: 32px;
+        }
+        .desc {
+          font-size: 32px;
+          line-height: 140%;
+        }
+      }
+      .auth-form-wrap {
+        padding: 50px 28px;
+        .footer-wrap {
+          margin-top: 40px;
+          position: unset;
+        }
+      }
+    }
+  }
+}

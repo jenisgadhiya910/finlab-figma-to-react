@@ -1,0 +1,346 @@
+@import "../../styles/main.scss";
+.solution-culture-discipline-section {
+  padding: 80px 60px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .our-best-feature-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 25px;
+    gap: 10px;
+    background: #f4f4f7;
+    border-radius: 80px;
+    margin-bottom: 12px;
+    span {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: $secondary500;
+    }
+  }
+  .title {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: $secondary500;
+    margin-bottom: 24px;
+  }
+  .desc {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: $secondary400;
+    max-width: 55%;
+    margin-bottom: 40px;
+  }
+  .cards-wrap {
+    width: 100%;
+    margin-bottom: 64px;
+    .card-item {
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+      background: #ffffff;
+      border: 2px solid $secondary200;
+      border-radius: 30px;
+      height: 100%;
+      max-height: -webkit-fill-available;
+      &-title {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: $secondary500;
+        margin-bottom: 24px;
+      }
+      &-desc {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: $secondary400;
+        margin-bottom: 64px;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 48px;
+        }
+      }
+      .bottom-saving-plan {
+        height: 220px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-end;
+        overflow: visible;
+        .card-plans {
+          .plan-item {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 19px;
+            border: 1px solid $secondary200;
+            border-radius: 12px;
+            .icon-wrap {
+              height: 40px;
+              width: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background: $secondary100;
+              border-radius: 8px;
+              margin-bottom: 20px;
+              img {
+                height: 24px;
+                width: 24px;
+                object-fit: cover;
+              }
+            }
+            .item-name {
+              font-family: "Plus Jakarta Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 150%;
+              letter-spacing: -0.02em;
+              color: $secondary500;
+              @media screen and (max-width: 767px) {
+                font-size: 13px;
+              }
+            }
+            .item-price {
+              font-family: "Plus Jakarta Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 150%;
+              letter-spacing: -0.02em;
+              color: $secondary300;
+              @media screen and (max-width: 767px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .add-new-plan-popup {
+          position: absolute;
+          right: 0;
+          top: -10px;
+          padding: 18px 24px;
+          background: white;
+          border: 1px solid $secondary200;
+          box-shadow: 0px 24px 54px -10px rgba(0, 0, 0, 0.25);
+          border-radius: 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          max-width: 45%;
+          z-index: 100;
+          &-title {
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: center;
+            letter-spacing: -0.02em;
+            color: $secondary500;
+            margin-bottom: 14px;
+            @media screen and (max-width: 767px) {
+              font-size: 11px;
+            }
+          }
+          &-btns {
+            width: 100%;
+            .ant-btn {
+              width: 100%;
+              height: 40px;
+              @media screen and (max-width: 767px) {
+                height: 32px;
+              }
+            }
+          }
+        }
+      }
+      .bottom-currentcy-section {
+        border: 1px solid $secondary200;
+        padding: 24px;
+        box-shadow: 0px 24px 54px -10px rgba(0, 0, 0, 0.06);
+        border-radius: 16px;
+        .bottom-currentcy-section-top {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 40px;
+          @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+          }
+          .currency-label {
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: -0.02em;
+            color: $secondary500;
+            @media screen and (max-width: 767px) {
+              font-size: 14px;
+            }
+            span {
+              font-size: 15px;
+              margin-left: 4px;
+            }
+          }
+          .top-right-pill {
+            border: 1px solid $secondary100;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 24px;
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            color: $secondary500;
+            @media screen and (max-width: 767px) {
+              font-size: 11px;
+            }
+          }
+        }
+        .currency-list {
+          display: flex;
+          flex-direction: column;
+          row-gap: 24px;
+          @media screen and (max-width: 767px) {
+            row-gap: 16px;
+          }
+          .currency-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .item-left {
+              display: flex;
+              align-items: center;
+              column-gap: 14px;
+              .item-flag {
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background: #2a5f9e;
+              }
+              .item-name {
+                font-family: "Plus Jakarta Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: -0.02em;
+                color: $secondary500;
+                @media screen and (max-width: 767px) {
+                  font-size: 12px;
+                }
+              }
+            }
+            .item-right {
+              display: flex;
+              align-items: center;
+              column-gap: 14px;
+              .item-value {
+                font-family: "Plus Jakarta Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: right;
+                letter-spacing: -0.02em;
+                color: $secondary500;
+                @media screen and (max-width: 767px) {
+                  font-size: 12px;
+                }
+              }
+              .item-currency {
+                font-family: "Plus Jakarta Sans";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                text-align: right;
+                letter-spacing: -0.02em;
+                color: $secondary300;
+                @media screen and (max-width: 767px) {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    padding: 60px 40px 120px;
+    .cards-wrap {
+      .card-item {
+        padding: 24px;
+        .bottom-currentcy-section {
+          padding: 16px;
+          .currency-list {
+            .currency-item {
+              .item-left {
+                .item-flag {
+                  height: 20px;
+                  width: 20px;
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding: 50px 20px 80px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 40px 16px 80px;
+    .our-best-feature-top {
+      span {
+        font-size: 12px;
+      }
+    }
+    .title {
+      font-size: 32px;
+    }
+    .desc {
+      max-width: 100%;
+      font-size: 14px;
+    }
+    .cards-wrap {
+      .card-item {
+        &-desc {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

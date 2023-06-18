@@ -1,0 +1,148 @@
+@import "../../styles/main.scss";
+.recent-activity-component-wrap {
+  padding: 32px;
+  background: #ffffff;
+  box-shadow: 50px 134px 84px rgba(73, 81, 93, 0.13);
+  border-radius: 21.698px;
+  @media screen and (max-width: 767px) {
+    padding: 16px;
+  }
+  .recent-activity-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 18px;
+    }
+    .title {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+      color: $secondary500;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      @media screen and (max-width: 767px) {
+        font-size: 13px;
+      }
+    }
+    .see-more {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: $secondary300;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      @media screen and (max-width: 767px) {
+        font-size: 11px;
+      }
+    }
+  }
+  .activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media screen and (max-width: 767px) {
+      gap: 24px;
+    }
+    .activity-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left-wrap {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        .icon-wrap {
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #f4f4f7;
+          img {
+            height: 34px;
+            width: 34px;
+            object-fit: cover;
+          }
+          @media screen and (max-width: 767px) {
+            height: 40px;
+            width: 40px;
+            img {
+              height: 18px;
+              width: 18px;
+            }
+          }
+        }
+        .details-wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .name {
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: -0.02em;
+            color: $secondary500;
+            @media screen and (max-width: 767px) {
+              font-size: 13px;
+            }
+          }
+          .desc {
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: -0.02em;
+            color: $secondary300;
+            @media screen and (max-width: 767px) {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+      .right-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-end;
+        .price {
+          font-family: "Plus Jakarta Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: $secondary500;
+          @media screen and (max-width: 767px) {
+            font-size: 13px;
+          }
+        }
+        .datetime {
+          font-family: "Plus Jakarta Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: -0.02em;
+          color: $secondary300;
+          text-align: right;
+          @media screen and (max-width: 767px) {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

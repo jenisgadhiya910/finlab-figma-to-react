@@ -1,0 +1,117 @@
+@import "../../styles/main.scss";
+.dashboard-layout-footer {
+  display: flex;
+  padding: 80px 60px;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: space-between;
+  background: $primaryGreen800;
+  flex: 1;
+  .company-info-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    flex: 0.25;
+    .logo-image {
+      height: 55px;
+      width: 178px;
+    }
+    .title {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 150%;
+      letter-spacing: -0.03em;
+      color: $white;
+    }
+    .copyright-text {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $secondary200;
+    }
+  }
+  .link-section {
+    display: flex;
+    flex-direction: column;
+    flex: 0.2;
+    .title {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: $white;
+      margin-bottom: 32px;
+    }
+    .links-wrap {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      .link-item {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: $secondary200;
+        cursor: pointer;
+      }
+    }
+  }
+  .social-section {
+    display: flex;
+    flex-direction: column;
+    flex: 0.15;
+    .title {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: $white;
+      margin-bottom: 32px;
+    }
+    .social-links {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+      .social-icon-wrap {
+        height: 24px;
+        width: 24px;
+        border: 1px solid #dce4e8;
+        border-radius: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        cursor: pointer;
+        .anticon {
+          color: $secondary200;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 48px 24px;
+    gap: 60px 40px;
+    .company-info-section {
+      flex: unset;
+      width: 100%;
+    }
+    .link-section {
+      flex: 1;
+    }
+    .social-section {
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+@import "../../styles/main.scss";
+.mypocked-plan-component-wrap {
+  padding: 32px;
+  background: #ffffff;
+  box-shadow: 50px 134px 84px rgba(73, 81, 93, 0.13);
+  border-radius: 21.698px;
+  @media screen and (max-width: 767px) {
+    padding: 16px;
+  }
+  .mypocked-plan-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 18px;
+    }
+    .title {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+      color: $secondary500;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      @media screen and (max-width: 767px) {
+        font-size: 13px;
+      }
+    }
+    .see-more {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: $secondary300;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      @media screen and (max-width: 767px) {
+        font-size: 11px;
+      }
+    }
+  }
+  .pock-list {
+    .pock-item {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 19px;
+      border: 1px solid $secondary200;
+      border-radius: 12px;
+      .icon-wrap {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $secondary100;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        img {
+          height: 24px;
+          width: 24px;
+          object-fit: cover;
+        }
+      }
+      .item-name {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: $secondary500;
+        @media screen and (max-width: 767px) {
+          font-size: 13px;
+        }
+      }
+      .item-price {
+        font-family: "Plus Jakarta Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: $secondary300;
+        @media screen and (max-width: 767px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
